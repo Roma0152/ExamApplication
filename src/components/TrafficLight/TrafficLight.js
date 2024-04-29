@@ -28,7 +28,7 @@ const TrafficLight = () => {
   useEffect(() => {
     const intervalId = setInterval(changeColor, 10000);
     return () => clearInterval(intervalId);
-  }, [currentColor]);
+  }, [changeColor]);
 
   const handleCircleClick = (color) => {
     if (color === currentColor) {
